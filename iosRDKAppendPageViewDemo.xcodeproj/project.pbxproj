@@ -13,7 +13,25 @@
 		AD60A7F21DF61F6600D122A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD60A7F01DF61F6600D122A5 /* Main.storyboard */; };
 		AD60A7F41DF61F6600D122A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD60A7F31DF61F6600D122A5 /* Assets.xcassets */; };
 		AD60A7F71DF61F6600D122A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD60A7F51DF61F6600D122A5 /* LaunchScreen.storyboard */; };
+		AD60A7FF1DF61F8E00D122A5 /* FoxitRDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD60A7FE1DF61F8E00D122A5 /* FoxitRDK.framework */; };
+		AD60A8001DF61F9E00D122A5 /* FoxitRDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD60A7FE1DF61F8E00D122A5 /* FoxitRDK.framework */; };
+		AD60A8011DF61F9E00D122A5 /* FoxitRDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD60A7FE1DF61F8E00D122A5 /* FoxitRDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AD832BF21DF6234C008E9689 /* developer_guide_ios.pdf in Resources */ = {isa = PBXBuildFile; fileRef = AD832BF11DF6234C008E9689 /* developer_guide_ios.pdf */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AD60A8021DF61F9E00D122A5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AD60A8011DF61F9E00D122A5 /* FoxitRDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AD60A7E41DF61F6500D122A5 /* iosRDKAppendPageViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosRDKAppendPageViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +44,8 @@
 		AD60A7F31DF61F6600D122A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD60A7F61DF61F6600D122A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD60A7F81DF61F6600D122A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD60A7FE1DF61F8E00D122A5 /* FoxitRDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FoxitRDK.framework; sourceTree = "<group>"; };
+		AD832BF11DF6234C008E9689 /* developer_guide_ios.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = developer_guide_ios.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD60A7FF1DF61F8E00D122A5 /* FoxitRDK.framework in Frameworks */,
+				AD60A8001DF61F9E00D122A5 /* FoxitRDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +64,8 @@
 		AD60A7DB1DF61F6500D122A5 = {
 			isa = PBXGroup;
 			children = (
+				AD832BF11DF6234C008E9689 /* developer_guide_ios.pdf */,
+				AD60A7FE1DF61F8E00D122A5 /* FoxitRDK.framework */,
 				AD60A7E61DF61F6600D122A5 /* iosRDKAppendPageViewDemo */,
 				AD60A7E51DF61F6500D122A5 /* Products */,
 			);
@@ -89,6 +113,7 @@
 				AD60A7E01DF61F6500D122A5 /* Sources */,
 				AD60A7E11DF61F6500D122A5 /* Frameworks */,
 				AD60A7E21DF61F6500D122A5 /* Resources */,
+				AD60A8021DF61F9E00D122A5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD832BF21DF6234C008E9689 /* developer_guide_ios.pdf in Resources */,
 				AD60A7F71DF61F6600D122A5 /* LaunchScreen.storyboard in Resources */,
 				AD60A7F41DF61F6600D122A5 /* Assets.xcassets in Resources */,
 				AD60A7F21DF61F6600D122A5 /* Main.storyboard in Resources */,
@@ -265,6 +291,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: hong_zhang@foxitsoftware.com (95VB982C73)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: hong_zhang@foxitsoftware.com (95VB982C73)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = iosRDKAppendPageViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Foxit.iosRDKAppendPageViewDemo;
@@ -276,6 +308,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: hong_zhang@foxitsoftware.com (95VB982C73)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: hong_zhang@foxitsoftware.com (95VB982C73)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = iosRDKAppendPageViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Foxit.iosRDKAppendPageViewDemo;
@@ -302,6 +340,7 @@
 				AD60A7FD1DF61F6600D122A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
