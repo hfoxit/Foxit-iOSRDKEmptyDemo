@@ -10,6 +10,7 @@
 #import <FoxitRDK/FSPDFObjC.h>
 #import <FoxitRDK/FSPDFViewControl.h>
 #import "ViewController.h"
+#import "testView.h"
 
 @interface ViewController ()
 
@@ -28,7 +29,7 @@
     {
         return;
     }
-    NSString* docPath = [[NSBundle mainBundle]pathForResource:@"developer_guide_ios" ofType:@"pdf"];
+    NSString* docPath = [[NSBundle mainBundle]pathForResource:@"FoxitText" ofType:@"pdf"];
     FSPDFDoc* doc = [FSPDFDoc createFromFilePath:docPath];
     [doc load:nil];
     
@@ -44,13 +45,17 @@
     
     CGRect subViewRect = self.view.frame;
     
-    subViewRect.origin.y = subViewRect.size.width/2;
-    
     NSLog(@"subViewRect: %f %f %f %f", subViewRect.origin.x, subViewRect.origin.y, subViewRect.size.width, subViewRect.size.height);
     
-    UIView* subView = [[UIView alloc]initWithFrame:subViewRect];
+    TestView* subView = [[TestView alloc]initWithFrame:subViewRect];
     
     subView.backgroundColor = [UIColor blueColor];
+    
+    UIView* blackBlock = [[UIView alloc]initWithFrame:CGRectMake(subViewRect.size.width/4, subViewRect.size.height/4, subViewRect.size.width/2, subViewRect.size.height/2)];
+    
+    blackBlock.backgroundColor = [UIColor blackColor];
+    
+    [subView addSubview:blackBlock];
     
     [self.testViewCtrl appendPageView:subView];
     
