@@ -29,7 +29,7 @@
     {
         return;
     }
-    NSString* docPath = [[NSBundle mainBundle]pathForResource:@"FoxitText" ofType:@"pdf"];
+    NSString* docPath = [[NSBundle mainBundle]pathForResource:@"developer_guide_ios" ofType:@"pdf"];
     FSPDFDoc* doc = [FSPDFDoc createFromFilePath:docPath];
     [doc load:nil];
     
@@ -42,6 +42,12 @@
 
 -(void)viewDidAppear:(BOOL)animated
 {
+    
+    NSLog(@"before pagelayoutmode: %d", [self.testViewCtrl getPageLayoutMode]);
+
+    [self.testViewCtrl setPageLayoutMode: PDF_LAYOUT_MODE_CONTINUOUS];
+    
+    NSLog(@"after pagelayoutmode: %d", [self.testViewCtrl getPageLayoutMode]);
     
     CGRect subViewRect = self.view.frame;
     

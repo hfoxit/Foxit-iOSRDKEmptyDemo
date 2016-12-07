@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00F05BC51DF7E1720007D052 /* FoxitText.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 00F05BC41DF7E1720007D052 /* FoxitText.pdf */; };
+		00F05BCA1DF7E6880007D052 /* testView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F05BC91DF7E6880007D052 /* testView.m */; };
 		AD60A7E91DF61F6600D122A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD60A7E81DF61F6600D122A5 /* main.m */; };
 		AD60A7EC1DF61F6600D122A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD60A7EB1DF61F6600D122A5 /* AppDelegate.m */; };
 		AD60A7EF1DF61F6600D122A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD60A7EE1DF61F6600D122A5 /* ViewController.m */; };
@@ -34,6 +36,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		00F05BC41DF7E1720007D052 /* FoxitText.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = FoxitText.pdf; sourceTree = "<group>"; };
+		00F05BC91DF7E6880007D052 /* testView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testView.m; sourceTree = "<group>"; };
+		00F05BCB1DF7E6A10007D052 /* testView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testView.h; sourceTree = "<group>"; };
 		AD60A7E41DF61F6500D122A5 /* iosRDKAppendPageViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosRDKAppendPageViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD60A7E81DF61F6600D122A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AD60A7EA1DF61F6600D122A5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,6 +69,7 @@
 		AD60A7DB1DF61F6500D122A5 = {
 			isa = PBXGroup;
 			children = (
+				00F05BC41DF7E1720007D052 /* FoxitText.pdf */,
 				AD832BF11DF6234C008E9689 /* developer_guide_ios.pdf */,
 				AD60A7FE1DF61F8E00D122A5 /* FoxitRDK.framework */,
 				AD60A7E61DF61F6600D122A5 /* iosRDKAppendPageViewDemo */,
@@ -86,6 +92,8 @@
 				AD60A7EB1DF61F6600D122A5 /* AppDelegate.m */,
 				AD60A7ED1DF61F6600D122A5 /* ViewController.h */,
 				AD60A7EE1DF61F6600D122A5 /* ViewController.m */,
+				00F05BCB1DF7E6A10007D052 /* testView.h */,
+				00F05BC91DF7E6880007D052 /* testView.m */,
 				AD60A7F01DF61F6600D122A5 /* Main.storyboard */,
 				AD60A7F31DF61F6600D122A5 /* Assets.xcassets */,
 				AD60A7F51DF61F6600D122A5 /* LaunchScreen.storyboard */,
@@ -163,6 +171,7 @@
 			files = (
 				AD832BF21DF6234C008E9689 /* developer_guide_ios.pdf in Resources */,
 				AD60A7F71DF61F6600D122A5 /* LaunchScreen.storyboard in Resources */,
+				00F05BC51DF7E1720007D052 /* FoxitText.pdf in Resources */,
 				AD60A7F41DF61F6600D122A5 /* Assets.xcassets in Resources */,
 				AD60A7F21DF61F6600D122A5 /* Main.storyboard in Resources */,
 			);
@@ -175,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F05BCA1DF7E6880007D052 /* testView.m in Sources */,
 				AD60A7EF1DF61F6600D122A5 /* ViewController.m in Sources */,
 				AD60A7EC1DF61F6600D122A5 /* AppDelegate.m in Sources */,
 				AD60A7E91DF61F6600D122A5 /* main.m in Sources */,
