@@ -6,9 +6,10 @@
 //  Copyright © 2016 Foxit. All rights reserved.
 //
 
-#import "ViewController.h"
+
 #import <FoxitRDK/FSPDFObjC.h>
 #import <FoxitRDK/FSPDFViewControl.h>
+#import "ViewController.h"
 
 @interface ViewController ()
 
@@ -31,18 +32,43 @@
     FSPDFDoc* doc = [FSPDFDoc createFromFilePath:docPath];
     [doc load:nil];
     
-    FSPDFViewCtrl *testViewCtrl = [[FSPDFViewCtrl alloc]initWithFrame:[self.view bounds]];
+    [self.testViewCtrl setDoc:doc];
     
-    [testViewCtrl setDoc:doc];
+    [self.view addSubview:self.testViewCtrl];
     
-    [self.view addSubview:testViewCtrl];
     
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    
+    CGRect subViewRect = self.view.frame;
+    
+    subViewRect.origin.y = subViewRect.size.width/2;
+    
+    NSLog(@"subViewRect: %f %f %f %f", subViewRect.origin.x, subViewRect.origin.y, subViewRect.size.width, subViewRect.size.height);
+    
+    UIView* subView = [[UIView alloc]initWithFrame:subViewRect];
+    
+    subView.backgroundColor = [UIColor blueColor];
+    
+    [self.testViewCtrl appendPageView:subView];
     
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(FSPDFViewCtrl *)testViewCtrl
+{
+    if(!_testViewCtrl)
+    {
+        _testViewCtrl = [[FSPDFViewCtrl alloc]initWithFrame:[self.view bounds]];
+    }
+    
+    return _testViewCtrl;
 }
 
 @end
