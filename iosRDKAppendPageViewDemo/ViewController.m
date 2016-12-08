@@ -29,9 +29,11 @@
     {
         return;
     }
-    NSString* docPath = [[NSBundle mainBundle]pathForResource:@"developer_guide_ios" ofType:@"pdf"];
+    NSString* docPath = [[NSBundle mainBundle]pathForResource:@"FoxitText" ofType:@"pdf"];
     FSPDFDoc* doc = [FSPDFDoc createFromFilePath:docPath];
     [doc load:nil];
+    
+    [self.testViewCtrl registerDocEventListener:self];
     
     [self.testViewCtrl setDoc:doc];
     
@@ -43,11 +45,27 @@
 -(void)viewDidAppear:(BOOL)animated
 {
     
-    NSLog(@"before pagelayoutmode: %d", [self.testViewCtrl getPageLayoutMode]);
+}
 
-    [self.testViewCtrl setPageLayoutMode: PDF_LAYOUT_MODE_CONTINUOUS];
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+-(FSPDFViewCtrl *)testViewCtrl
+{
+    if(!_testViewCtrl)
+    {
+        _testViewCtrl = [[FSPDFViewCtrl alloc]initWithFrame:[self.view bounds]];
+    }
     
-    NSLog(@"after pagelayoutmode: %d", [self.testViewCtrl getPageLayoutMode]);
+    return _testViewCtrl;
+}
+
+-(void)onDocOpened:(FSPDFDoc *)document error:(int)error
+{
+    
+    [self.testViewCtrl setPageLayoutMode: PDF_LAYOUT_MODE_CONTINUOUS];
     
     CGRect subViewRect = self.view.frame;
     
@@ -65,21 +83,8 @@
     
     [self.testViewCtrl appendPageView:subView];
     
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
--(FSPDFViewCtrl *)testViewCtrl
-{
-    if(!_testViewCtrl)
-    {
-        _testViewCtrl = [[FSPDFViewCtrl alloc]initWithFrame:[self.view bounds]];
-    }
     
-    return _testViewCtrl;
+
 }
 
 @end

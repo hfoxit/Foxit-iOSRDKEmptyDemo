@@ -15,9 +15,4 @@
 
 @implementation TestView
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
-    NSLog(@"touches Began");
-}
-
 @end
