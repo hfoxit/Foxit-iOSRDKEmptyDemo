@@ -10,8 +10,9 @@
 #define testView_h
 
 #import <UIKit/UIKit.h>
+#import <FoxitRDK/FSPDFViewControl.h>
 
-@interface TestView : UIView
+@interface TestView : UIView<IGestureEventListener>
 
 @end
 

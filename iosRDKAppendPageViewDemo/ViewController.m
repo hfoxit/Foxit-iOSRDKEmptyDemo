@@ -21,8 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSString* sn = @"Ds7h4xbdyC7URaWYsG/U/ZkNsvlvb02Z75zCFQwqiis/6T44jOug2g==";
-    NSString* unlock = @"ezJvj1/GvGh39zvoP2Xsb3n67x+ioyBWyhPMX8fzwi7Vgp16b2iSxqyvDHj1MB8Bf5h2En/S6fAq6pdnppK2jzBd2LlYs5CyfUScGoZZWPDhQxWxx/jGaeOghBXv2i2uqxOq7rDnqj7+nlO2tdt+p/sfXzh4pXheC0dspG/EWzBULyuul8f88a7vFx8PoRRDRAHYpw4w3lXcSEjKpxh+0VCXbeUUakO6BG3/ftKeiDSsO7nhRyiheUDb7GqWfCbNYnITf/GzSXsR36M1i5ilQG07Te0k6OSlUKM5u8zzN1J6CN0YhIkkbw78osbdccC7SJBqowVerBMJBxdVzVFH6m9VnLvxSuBksAwMJFaahLkwA4QTaliDiH1KLM+GO9KsBF8CrSzPR2iLQi2DRqM+DqBNvlvH+RSSITzLlWkr1ZTR9NIsku7J0NlYYeV2/gJNNXjtSFvh2tYF4c+jiQB0grBMz7e0g7TPOeSUFOASua1iF0OnGWd+Q3Sg9kU3fQnG9f3X4L4yMOE3zEp944TBsjnenjCq4qaQDhnv0QcoETNkbR096YldWpEVLur6CKyc9efvjY1mm4ELtNQAqUZQrsRItipF+wMbPQY4htvBri03lwOyJtXXKahDYk2aiQ+wSJ9aL8dSVUfaNC0QRgt2owXWjiRfWwHnLhVAO6xU7QOO/7QfaneySeNlV1FAVdn8KLRiX45QAkwVHvY41vCR0k7x7yI6Bgej5eVL8Iwfz515gtfV0pIJCTTymHaAZNMbgqmWZzlibHPzeR7BAGom4Zs24Idgn6beTpqjCoG1vM66Rp4ayGiLJfCESiV8u0IFdkPyTVphmCFhcUPFpc5IM+lHVmgnsnmErsIg6Gy2eCX6LU0uEL3mrT8JlDdpEVU7C6E91FUnTt9PAnab3fMsxdhKgu6Ng0NwdxWuEOoGm23zCOjw20tgQ+oO6+aycuMJHqlrQkVjKBVN/kOic5akgOgkw4//TaKtl8WdHRxuC+4/dHZi71tJj4r8A+qgB6dyOHr2gUiMZd5vzadOGW+UpGp4LPfAmCCYH+PnExsSKh7VGHlPwFyYFr1SVRQOm15qD3yeTA/HlC4y0SGaYPuVOUI5E884UoL7junEgRl6m+Jyh95cpat+iBRyao7+R8GqRJQfEFk0RRzUZH5Ny67sm/9au8r+rSfx6f/2KIK17AXJ0bcduAIW5crpNcAPP44ockdOG03dqEs=";
+    NSString* sn = @"ktoB0rBpK74y1CxIIa27WoLSBJEaSeR85eNAmzAk3UO+tLcp30i2Rw==";
+    NSString* unlock = @"ezKXjt3HtGhz9LvoL0WQjY537790VFfbykNCI0MicbT/nvzzLizkxROx+Qmgegu7fShWS6YDidw1+E87HZS9r6q4CfW0c5gwfCSQnzSBxfmvppgJ0zikaOXIOadxmE4JNny4oSkFRJ7zBxpXmOx1jL4zlaU/DIcJtrc0HspXwmrCsIFMhfTg5ZHdYHitxrhRdRsiHoVY8TYDE5hFpgO7GvHHEpGGCELwwM4x50Q/3416zJZOp8QMsriH+61WGuvthdHTk6B3YKB6djPM8USsoQR4RHmUC7bUCtOSB+zNyEhDq/kQurqLaQTjfjtW/5iBeQ2EdqUFokN8LGd805B/tgT9yABMK7U6z3HMfd3ytXVqddJLZEmaMNcDu3Z3bqK/T856kSwXcCLJqn10u9lfdmzR78OUSdfz4l2gyiSSJLcySxth/E0UZExXO3TmaTAnl0nxTp3dVwlBCI0CcEWs5q7RLOL75AEFnpJXBHFtEPHRL8rAF1weErmF8d4TCgbncfCO5bj2E3R6IsBzd3JvdrXGGkDvuZ3E3EdVdFeer1iv147XCx/x8PNcgctXwnQji88lFUypkP+YWtGQ1lBwLX2DrzsDe91L8Lp+4NIoc6nGoDuWasAGa6VbYpmxrYtvM+5b0eHotgnqrA7DcgCRI72lUHEzZCM/W0tKtQkspvGsu4XSgzHmbt0RqhKyGpBGS2poxR8Q0Kyj1C/ITz8Xswp2bxwf8HPL++skvZ3uxFyUevOLuTD+t5Jah81Nylefa/2vAA9zTn+FYNuJpv0W4uu4TPGg3qvEKWNR5fJpD2LhLsliaxg3S4HwX1NzmGeta91CgZdhKwO99HyZR/MzdJ2DbHXTeWr50jHWr5xSvcR30Uqg396JLbepvtXsEYtsJFymBJnmBwalykfmBWPAIAnWS95AUhOeu9OdoqllO84NLrlATHnhxf9mBP3eLsbKuQEPsQImHwCgOjkiR96Q3gmPqmupWo+O9XoFw7+aqprXNdjopR0j6kF43u839xWUKdb0Svz7/Hl/t2+bINuWu+vuseV7xvRKpe6oKFl/KS6WWapqU5s6WvIi6/3x2ZXFNW6PBn5jNn3reHFn4zqWu5k6MGTul8iMZII0QWRIzQb0sbkSnwncf6siZV45UUbiIpL3NMgMkjoNtWVhlO0Cu/UYTbbmpMjzIacfwcI+yuC/xUJwGq+jKh3ri0oV7q9Wz91P6Q==";
     enum FS_ERRORCODE eret = [FSLibrary init:sn key:unlock];
     
     if(eret!=e_errSuccess)
@@ -81,10 +81,14 @@
     
     [subView addSubview:blackBlock];
     
+    UISwitch* uiSwitch = [[UISwitch alloc]initWithFrame:CGRectMake(subViewRect.size.width/8, subViewRect.size.width/8, subViewRect.size.width/4, subViewRect.size.width/4)];
+    
+    [subView addSubview:uiSwitch];
+    
     [self.testViewCtrl appendPageView:subView];
     
+    [self.testViewCtrl registerGestureEventListener:(id<IGestureEventListener>)subView];
     
-
 }
 
 @end
