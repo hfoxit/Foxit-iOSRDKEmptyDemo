@@ -65,7 +65,7 @@
 -(void)onDocOpened:(FSPDFDoc *)document error:(int)error
 {
     
-    [self.testViewCtrl setPageLayoutMode: PDF_LAYOUT_MODE_CONTINUOUS];
+    //[self.testViewCtrl setPageLayoutMode: PDF_LAYOUT_MODE_CONTINUOUS];
     
     CGRect subViewRect = self.view.frame;
     
